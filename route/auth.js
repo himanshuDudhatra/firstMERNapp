@@ -142,7 +142,7 @@ router.post('/contact', authenticate , async (req, res) => {
 
 router.get("/logout" ,(req,res) => {
     console.log(`hello my logout`);
-    res.clearCookie("jwtoken",{path:"/"});
+    res.clearCookie("jwt",{path:"/"});
     res.status(200).send('user logout');
 });
 
