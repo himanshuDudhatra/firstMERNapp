@@ -144,7 +144,8 @@ router.post('/contact', authenticate , async (req, res) => {
 router.get("/logout" ,(req,res) => {
     console.log(`hello my logout`);
     //res.clearCookie("jwt",{path:"/"});
-    res.cookie('jwt','',{maxAge:1});
+    const maxAge = 1 ;
+    res.cookie('jwt','',{maxAge});
     res.status(200).send('user logout');
 });
 
