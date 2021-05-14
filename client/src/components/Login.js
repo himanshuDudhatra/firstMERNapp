@@ -40,7 +40,7 @@ const Login = () => {
             <div className="container mt-5">
                 <div className="signin-constent">
                     <div className="signin-form">
-                        <h2 className="from-title">Sign up</h2><br/>
+                        <h2 className="from-title">Log in</h2><br/>
                         <form>
                             <div className="form-group">
                                 <label htmlFor="email">
