@@ -6,6 +6,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const authenticate = require("../middleware/authenticate");
 
+
 /*router.post("/register",(req,res) => {
     //console.log(req.body);
     //res.json({message:req.body});
@@ -142,7 +143,8 @@ router.post('/contact', authenticate , async (req, res) => {
 
 router.get("/logout" ,(req,res) => {
     console.log(`hello my logout`);
-    res.clearCookie("jwt",{path:"/"});
+    //res.clearCookie("jwt",{path:"/"});
+    res.cookie('jwt','',{maxAge:1});
     res.status(200).send('user logout');
 });
 
