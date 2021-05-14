@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import imgPath from "./img/3c6e338af1a2bc36865fba0e89257e34.jpg"
+import imgPath from "./img/download.jpg"
 import { NavLink, useHistory } from "react-router-dom";
 import "./css/about.css";
 
