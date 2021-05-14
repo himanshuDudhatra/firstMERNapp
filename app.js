@@ -21,9 +21,6 @@ const PORT = process.env.PORT || 5000;
 //const DB = process.env.DATABASE_LINK;
 //mongoose.connect(DB , { useNewUrlParser:true, useCreateIndex:true, useUnifiedTopology:true, useFindAndModify:false }).then( () => { console.log(`connection successfull`); } ).catch( (error) => console.log(`no connection`) );
 
-app.get('/', middelware ,(req, res) => {
-    res.send('hello world from the server');
-});
 
 //link all router file
 app.use(require("./route/auth"));
