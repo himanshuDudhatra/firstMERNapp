@@ -4,9 +4,6 @@ import { NavLink, useHistory } from "react-router-dom";
 import "./css/about.css";
 
 const About = () => {
-    //const back = {
-        //background: '-webkit-linear-gradient(left, #3931af, #00c6ff)',
-    //}
 
     const history = useHistory();
     const [userData,setData] = useState({});//always write type data what you want to store likr obj. so useStare({}) and not wite like so type error is undefine
